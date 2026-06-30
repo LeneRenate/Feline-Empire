@@ -16,7 +16,7 @@ export default function AppLayout() {
   return (
     // Use shadcn-menubar?
     <>
-      <header className="w-full py-4">
+      <header className="w-full mb-8 py-6 border-b-2">
         {/* Welcome RulerName - greeting ? */}
 
         <div className="fixed right-8 top-4 space-x-2">
@@ -34,7 +34,7 @@ export default function AppLayout() {
         <nav>
           <ul className="flex flex-row justify-center items-end gap-8">
             <li>
-              <Link to="">Profile</Link>
+              <Link to="/profile">Profile</Link>
             </li>
             <li>
               <Link to="">Empire</Link>

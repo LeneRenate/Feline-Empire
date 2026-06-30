@@ -7,6 +7,9 @@ import "./App.css";
 import PublicLayout from "./layouts/PublicLayout";
 import AppLayout from "./layouts/AppLayout";
 import ProtectedRoute from "./components/ProtectedRoute";
+import { CreateCat } from "./pages/CreateCat";
+import { CreateEmpire } from "./pages/CreateEmpire";
+import { ProfilePage } from "./pages/ProfilePage";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route element={<ProtectedRoute />}>
           <Route element={<AppLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/create_cat" element={<CreateCat />} />
+            <Route path="/create_empire" element={<CreateEmpire />} />
+            <Route path="profile" element={<ProfilePage />} />
           </Route>
         </Route>
       </Routes>

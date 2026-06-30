@@ -27,7 +27,7 @@ function Signup() {
       if (result.error) {
         setError(result.error.message);
       } else {
-        navigate("/dashboard");
+        navigate("/create_cat");
       }
     } catch {
       setError("Something went wrong. Please try again");

@@ -10,10 +10,6 @@ export const royalTitles = [
   "Queen",
   "Prince",
   "Princess",
-  "Prince Consort",
-  "Queen Consort",
-  "Crown Prince",
-  "Crown Princess",
 
   // Grand Royal
   "Grand Duke",

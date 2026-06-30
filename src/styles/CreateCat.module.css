@@ -1,0 +1,33 @@
+/* 
+FieldGroup: data-slot = "field-group"
+Field: data-slot = "field"
+FieldLabel: data-slot = "field-label"
+FieldSeparator: data-slot = "field-separator"
+
+Input: input
+
+Card: data-slots
+*/
+.section :global([data-slot="field"]) {
+  width: 80%;
+  margin: auto 2rem;
+}
+
+.section :global(label) {
+  text-transform: uppercase;
+}
+
+.section :global(input) {
+}
+
+.section :global(p) {
+  font-size: 0.75rem;
+  font-weight: lighter;
+  text-align: start;
+  color: var(--muted-foreground);
+}
+
+.section :global([data-slot="field-separator"]) {
+  width: 80%;
+  margin: auto;
+}
